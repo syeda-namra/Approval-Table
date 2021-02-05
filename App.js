@@ -59,9 +59,9 @@ _alertIndex1(e) {
     return (
       
       <View style={styles.container}>
-              
-              <Text style={styles.head}> Organization ID        Full Name     Department      Conatct Number        Verified</Text>  
-        
+            <ScrollView horizontal={true}>    
+            <Text style={styles.head}> Organization ID        Full Name     Department      Conatct Number        Verified</Text>
+              </ScrollView>
         {this.state.organization.map((org)=>
           <ScrollView horizontal={true}> 
           
@@ -79,7 +79,7 @@ _alertIndex1(e) {
          title = "Declined"
          color = "red"
       /> 
-{"\n"}
+
             </Text>
       
             </ScrollView>)
@@ -93,8 +93,8 @@ _alertIndex1(e) {
 }
  
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, paddingTop: '25%',paddingLeft :40, backgroundColor: '#fff', alignContent: 'center' },
-  head: { height: 40, backgroundColor: '#808B97' },
+  container: { flex: 1, padding: 16, paddingTop: '25%',paddingLeft :40, backgroundColor: '#ecf0f1', alignContent: 'center' },
+  head: { height: 40, backgroundColor: '#D0B3D0', fontWeight: "bold"},
   text: { margin: 10, color: '#007AFF'},
   row: { flexDirection: 'row', backgroundColor: '#FFF1C1' },
   btn: { width: 58, height: 0, marginLeft: 15, backgroundColor: '#c8e1ff', borderRadius: 2, textAlign:'center'},
